@@ -16,7 +16,7 @@ class cCompetir(threading.Thread):
         self.__cOptimo = list()
         self.__aEstado = destruido
         pass
-    ·ffffffffffffffffffffffff
+    #ffffffffffffffffffffffff
     def destruido(self):
         return self.__aEstado.value == 1
     
@@ -83,5 +83,5 @@ class cCompetir(threading.Thread):
             sleep(velocidad)
             if self.targetIt(dTn, fTn, cTn):
                 self.__aEstado.value = 1
-                sleep(20)
+                sleep(10)
                 
