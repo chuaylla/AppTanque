@@ -7,7 +7,7 @@ import aEscenario
 class cCompetir(threading.Thread):
     
     def __init__(self, pEscenario, pTanque, pObjetivo, destruido):
-        #Cargando hilo
+        #Cargando hilo esenario
         threading.Thread.__init__(self)
         #Cargando el escenario
         self.__aEscenario = pEscenario
@@ -16,7 +16,7 @@ class cCompetir(threading.Thread):
         self.__cOptimo = list()
         self.__aEstado = destruido
         pass
-    
+    ·ffffffffffffffffffffffff
     def destruido(self):
         return self.__aEstado.value == 1
     
@@ -83,5 +83,5 @@ class cCompetir(threading.Thread):
             sleep(velocidad)
             if self.targetIt(dTn, fTn, cTn):
                 self.__aEstado.value = 1
-                sleep(10)
+                sleep(20)
                 
